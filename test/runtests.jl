@@ -14,6 +14,12 @@ end
     @test val > 0
 end
 
+@testset "neutral ratio sanity" begin
+    ρ = rho_thr(1.0; channel=:neutral)
+    ratio = ρ.pi / ρ.gamma
+    @test ratio > 0.5 && ratio < 5.0
+end
+
 @testset "rho_thr charged" begin
     ρ = rho_thr(1.0; channel=:charged)
     @test isfinite(ρ.pi)

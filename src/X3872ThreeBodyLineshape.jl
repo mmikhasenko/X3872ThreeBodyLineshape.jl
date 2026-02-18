@@ -13,7 +13,7 @@ function default_constants()
         mDstar0 = 2.00685,
         ΓDstar0 = 55.2e-6,
         μ0 = -3.77,
-        # charged (approx; update when validated)
+        # charged (PDG/measurement; update if needed)
         mπp = 0.13957039,
         mDp = 1.86965,
         mDstarp = 2.01026,
