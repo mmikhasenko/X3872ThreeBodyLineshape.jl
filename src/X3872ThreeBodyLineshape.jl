@@ -1,8 +1,12 @@
 module X3872ThreeBodyLineshape
 
-using xDDPhaseSpace
+import Base: denominator
 
-export lineshape, rho_thr, build_channels, default_constants
+using xDDPhaseSpace
+using Parameters
+
+export X3872ThreeBody, default_constants, build_channels
+export rho_thr, denominator, lineshape
 
 """Return a NamedTuple of default constants (masses/widths) used by the model."""
 function default_constants()
@@ -55,14 +59,23 @@ function build_channels(; channel::Symbol = :neutral, constants = default_consta
     end
 end
 
+"""Model container for three-body X(3872) lineshape."""
+@with_kw struct X3872ThreeBody{T<:Real}
+    Ef_MeV::T
+    g::T
+    Γ0_MeV::T
+    channel::Symbol = :neutral
+    constants::NamedTuple = default_constants()
+end
+
 """
-    rho_thr(E; channel=:neutral, constants=default_constants())
+    rho_thr(model::X3872ThreeBody, E)
 
 Three-body phase-space density at energy offset E (MeV) relative to threshold.
 Returns a NamedTuple with π and γ contributions and their sum.
 """
-function rho_thr(E; channel::Symbol = :neutral, constants = default_constants())
-    ch = build_channels(; channel, constants)
+function rho_thr(model::X3872ThreeBody, E)
+    ch = build_channels(; channel = model.channel, constants = model.constants)
     m = ch.threshold + E * 1e-3
     ρπ = xDDPhaseSpace.ρ_thr(ch.pi, m)
     ργ = xDDPhaseSpace.ρ_thr(ch.gamma, m)
@@ -70,23 +83,24 @@ function rho_thr(E; channel::Symbol = :neutral, constants = default_constants())
 end
 
 """
-    lineshape(E; channel=:neutral, Ef_MeV, g, Γ0_MeV, constants=default_constants())
+    denominator(model::X3872ThreeBody, E)
 
-Unnormalized lineshape using a dispersive denominator:
-    D(E) = (Ef - E)*1e-3 + i Γ0/2 + i g * (ρπ + ργ)
-Returns |1/D(E)|^2.
+Denominator of the three-body amplitude. E is in MeV.
 """
-function lineshape(
-    E;
-    channel::Symbol = :neutral,
-    Ef_MeV::Real,
-    g::Real,
-    Γ0_MeV::Real,
-    constants = default_constants()
-)
-    ρ = rho_thr(E; channel, constants)
-    D = (Ef_MeV - E) * 1e-3 + 1im * Γ0_MeV / 2 + 1im * g * ρ.total
-    return abs2(inv(D))
+function denominator(model::X3872ThreeBody, E)
+    @unpack Ef_MeV, g, Γ0_MeV = model
+    ρ = rho_thr(model, E)
+    return (Ef_MeV - E) * 1e-3 + 1im * Γ0_MeV / 2 + 1im * g * ρ.total
 end
+
+"""Lineshape (unnormalized): |1/denominator|^2."""
+lineshape(model::X3872ThreeBody, E) = abs2(inv(denominator(model, E)))
+
+# convenience wrappers
+rho_thr(E; channel::Symbol = :neutral, constants = default_constants()) =
+    rho_thr(X3872ThreeBody(; Ef_MeV = 0.0, g = 1.0, Γ0_MeV = 0.0, channel, constants), E)
+
+lineshape(E; channel::Symbol = :neutral, Ef_MeV::Real, g::Real, Γ0_MeV::Real, constants = default_constants()) =
+    lineshape(X3872ThreeBody(; Ef_MeV, g, Γ0_MeV, channel, constants), E)
 
 end # module

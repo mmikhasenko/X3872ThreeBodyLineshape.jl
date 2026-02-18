@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [deps]
 xDDPhaseSpace = "457bd369-aa38-418d-83c3-59398da2a644"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
 
 [compat]
 julia = "1.11"

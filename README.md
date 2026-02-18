@@ -10,6 +10,16 @@ using xDDPhaseSpace for 3-body phase space and supporting analytic continuation.
 - Minimal API implemented: `rho_thr`, `lineshape`, and `build_channels`.
 - Charged-channel constants are placeholders; update once validated.
 
+## Usage (object API, like X3872Flatte)
+```julia
+using X3872ThreeBodyLineshape
+
+model = X3872ThreeBody(Ef_MeV=0.0, g=0.1, Γ0_MeV=0.0; channel=:neutral)
+D = denominator(model, 1.0)      # E in MeV
+L = lineshape(model, 1.0)        # |1/D|^2
+ρ = rho_thr(model, 1.0)          # (pi, gamma, total)
+```
+
 ## Parameters (defaults)
 | Symbol | Meaning | Default | Source |
 |---|---|---:|---|
@@ -25,6 +35,6 @@ using xDDPhaseSpace for 3-body phase space and supporting analytic continuation.
 | μ+ | radiative coupling (charged) | -3.77 | placeholder (same magnitude as μ0) |
 
 ## Roadmap
-- Iteration 3: Tests (regression vs. validated notebook outputs) + charged-channel constants
 - Iteration 4: Docs page + example
+- Iteration 5: Validation PDF update + charged-channel review
 
