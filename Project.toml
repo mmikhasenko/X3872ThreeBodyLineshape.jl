@@ -8,3 +8,9 @@ xDDPhaseSpace = "457bd369-aa38-418d-83c3-59398da2a644"
 
 [compat]
 julia = "1.11"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
