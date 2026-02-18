@@ -59,8 +59,14 @@ standalone package: \texttt{X3872ThreeBodyLineshape.jl}.
     \caption{Ratio of the phase-space factors for $\chi_{c1}\to D^0\bar D^0\pi^0$ and $\chi_{c1}\to D^0\bar D^0\gamma$. The shaded band corresponds to the PDG branching ratio.}
 \end{figure}
 
+\section*{Delta from X3872EffRange}
+\begin{itemize}[leftmargin=1.5em]
+    \item Extracted a minimal object-based API: \texttt{X3872ThreeBody}, \texttt{denominator}, \texttt{lineshape}, \texttt{rho\_thr}.
+    \item Added tests and a parameter table with sources.
+    \item Copied validation plots into the new repo for regression reference.
+\end{itemize}
+
 \section*{Next}
-Iteration 3 will implement and validate the charged-channel constants and add
-regression tests against these plots.
+Iteration 4 adds an analytic-continuation test and a minimal usage example. Iteration 5 updates this note with charged-channel validation once constants are fixed.
 
 \end{document}

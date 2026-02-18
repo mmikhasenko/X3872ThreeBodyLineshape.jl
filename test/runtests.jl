@@ -23,6 +23,12 @@ end
     @test ratio > 0.5 && ratio < 5.0
 end
 
+@testset "analytic continuation" begin
+    model = X3872ThreeBody(Ef_MeV=0.0, g=0.1, Γ0_MeV=0.0; channel=:neutral)
+    D = denominator(model, 1.0 + 1.0im)
+    @test isfinite(real(D)) && isfinite(imag(D))
+end
+
 @testset "rho_thr charged" begin
     model = X3872ThreeBody(Ef_MeV=0.0, g=1.0, Γ0_MeV=0.0; channel=:charged)
     ρ = rho_thr(model, 1.0)
