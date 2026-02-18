@@ -19,6 +19,8 @@ jobs:
           path: ~/.julia
           key: ${{ runner.os }}-julia-${{ hashFiles('**/Project.toml', '**/Manifest.toml') }}
           restore-keys: ${{ runner.os }}-julia-
+      - name: Add xDDPhaseSpace
+        run: julia --project=. -e 'using Pkg; Pkg.develop(url="https://github.com/mmikhasenko/xDDPhaseSpace.jl"); Pkg.resolve()'
       - name: Instantiate
         run: julia --project=. -e 'using Pkg; Pkg.instantiate()'
       - name: Test
