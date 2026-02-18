@@ -1,0 +1,10 @@
+name = "X3872ThreeBodyLineshape"
+uuid = "d4c4c0a4-1b9b-4f48-9b17-52f1b9415a3b"
+authors = ["Misha Mikhasenko <mikhail.mikhasenko@cern.ch>"]
+version = "0.1.0"
+
+[deps]
+xDDPhaseSpace = "457bd369-aa38-418d-83c3-59398da2a644"
+
+[compat]
+julia = "1.11"
