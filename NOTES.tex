@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{Analytic continuation validation notes}
+\author{WG2 / X3872 Three-Body}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Scope}
+Validation of analytic continuation across the $D\bar D^*$ cut in the complex plane. Compare existing continuation methods (hook/straight path) and introduce an explicit discontinuity method to access physical and adjacent sheets.
+
+\section*{Current implementation map}
+\begin{itemize}
+  \item \texttt{src/analytic\_continuation.jl} — current continuation logic (hook/straight path).
+  \item \texttt{src/threebody.jl} — three-body amplitude evaluation.
+  \item \texttt{src/X3872ThreeBodyLineshape.jl} — package entry/exports.
+  \item \texttt{src/util.jl} — utilities.
+\end{itemize}
+
+\section*{Validation checklist (to be populated)}
+\begin{itemize}
+  \item Path-independence: compare two distinct contours in the complex plane; values should agree away from cuts.
+  \item Cut identification: sample points just above and below the cut; confirm discontinuity consistent with theory.
+  \item Branch point behavior: probe near threshold; verify expected square-root behavior.
+  \item Sheet consistency: continuation below cut should match direct evaluation on adjacent sheet (when available).
+  \item Numerical stability: sensitivity to step size / contour discretization.
+\end{itemize}
+
+\section*{Algorithms}
+\subsection*{A) Current implementation}
+To fill after reading \texttt{analytic\_continuation.jl}: identify hook/straight path logic and sheet selection.
+
+\subsection*{B) Alternative contour path}
+Define a second path for cross-checks (e.g., arc detour around branch point).
+
+\subsection*{C) Explicit discontinuity method (new)}
+Define discontinuity term due to $D^*$ pole and add to amplitude for target sheet. Implement sheet selection and validate across cut.
+
+\section*{Results}
+\begin{itemize}
+  \item (To be filled) Summary of checks performed and outcomes.
+\end{itemize}
+
+\end{document}
