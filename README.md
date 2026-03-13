@@ -1,5 +1,7 @@
 # X3872ThreeBodyLineshape.jl
 
+![Stable Documentation](https://img.shields.io/badge/needs_human-AI_slop_state-orange.svg)
+
 Minimal package to provide a three-body lineshape for X(3872) → D* D̄ (neutral and charged channels),
 using xDDPhaseSpace for 3-body phase space and supporting analytic continuation.
 
