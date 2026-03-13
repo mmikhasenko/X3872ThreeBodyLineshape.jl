@@ -5,6 +5,8 @@ import Base: denominator
 using xDDPhaseSpace
 using Parameters
 
+include("analytic_continuation.jl")
+
 export X3872ThreeBody, default_constants, build_channels
 export rho_thr, denominator, lineshape
 
