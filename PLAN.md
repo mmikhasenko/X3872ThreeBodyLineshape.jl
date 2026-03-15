@@ -8,6 +8,30 @@
 - **Raw threshold:** evaluate $\rho_\mathrm{thr}(E)$ in the complex plane for D0/D*0 with D*0 as BW.
 - **Consistency (no-cut region):** verify hook and straight continuation agree within $10^{-6}$ away from the cut.
 
+### Action: create_file scripts/grid_raw_threshold.jl
+```julia
+using X3872ThreeBodyLineshape
+
+const model = X3872ThreeBody(; Ef_MeV=0.0, g=1.0, Γ0_MeV=0.0, channel=:neutral)
+const n = 30
+const re_min, re_max = -3.0, 0.0
+const im_min, im_max = -2.0, 1.0
+const re = range(re_min, re_max; length=n)
+const im = range(im_min, im_max; length=n)
+
+mkpath("results")
+open("results/rho_thr_grid.csv","w") do io
+    write(io, "ReE,ImE,rho_pi,rho_gamma,rho_total\n")
+    for x in re, y in im
+        E = x + 1im*y
+        ρ = rho_thr(model, E)
+        write(io, string(x,",",y,",",ρ.pi,",",ρ.gamma,",",ρ.total,"\n"))
+    end
+end
+```
+
+### Action: run julia --project=. scripts/grid_raw_threshold.jl
+
 ## Phase B — Cut structure + discontinuity
 - **Path definitions:**
   - Straight path: cut is straight.
