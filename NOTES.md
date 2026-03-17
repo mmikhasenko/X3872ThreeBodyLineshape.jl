@@ -281,3 +281,342 @@ Keyword hits:
 - Found no existing `analytic_continuation.jl` / `threebody.jl` in repo (only `X3872ThreeBodyLineshape.jl`).
 - Added `src/analytic_continuation.jl` with path-based continuation helpers (sqrt/log) and straight vs hook contours.
 - Hook/straight comparison added as tests in `test/analytic_continuation.jl`.
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-13T22:04:51.900166
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T00:04:47.011974
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T02:05:03.858861
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T04:04:46.756102
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T06:05:40.530958
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T08:04:47.509594
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T10:05:37.550979
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T12:04:58.250640
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T14:04:46.309338
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T16:06:07.140782
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T18:05:29.396141
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T20:04:50.454417
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-14T22:04:56.660376
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-15T00:05:03.769093
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:19:# hooks.allowdeletebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:20:#   This boolean sets whether deleting branches will be allowed in the
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:22:# hooks.denycreatebranch
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:23:#   This boolean sets whether remotely creating branches will be denied
+/home/mmikhasenko/Documents/Projects/x3872-3body/.git/hooks/update.sample:47:allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-15T02:04:50.904470
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:5:\title{Analytic continuation validation notes}
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:13:Validation of analytic continuation across the $D\bar D^*$ cut in the complex plane. Compare existing continuation methods (hook/straight path) and introduce an explicit discontinuity method to access physical and adjacent sheets.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:17:  \item \texttt{src/analytic\_continuation.jl} — current continuation logic (hook/straight path).
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:25:  \item Path-independence: compare two distinct contours in the complex plane; values should agree away from cuts.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:26:  \item Cut identification: sample points just above and below the cut; confirm discontinuity consistent with theory.
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-15T04:04:47.952836
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:5:\title{Analytic continuation validation notes}
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:13:Validation of analytic continuation across the $D\bar D^*$ cut in the complex plane. Compare existing continuation methods (hook/straight path) and introduce an explicit discontinuity method to access physical and adjacent sheets.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:17:  \item \texttt{src/analytic\_continuation.jl} — current continuation logic (hook/straight path).
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:25:  \item Path-independence: compare two distinct contours in the complex plane; values should agree away from cuts.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:26:  \item Cut identification: sample points just above and below the cut; confirm discontinuity consistent with theory.
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-15T06:04:47.600197
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:5:\title{Analytic continuation validation notes}
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:13:Validation of analytic continuation across the $D\bar D^*$ cut in the complex plane. Compare existing continuation methods (hook/straight path) and introduce an explicit discontinuity method to access physical and adjacent sheets.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:17:  \item \texttt{src/analytic\_continuation.jl} — current continuation logic (hook/straight path).
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:25:  \item Path-independence: compare two distinct contours in the complex plane; values should agree away from cuts.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:26:  \item Cut identification: sample points just above and below the cut; confirm discontinuity consistent with theory.
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-15T08:04:44.733482
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:5:\title{Analytic continuation validation notes}
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:13:Validation of analytic continuation across the $D\bar D^*$ cut in the complex plane. Compare existing continuation methods (hook/straight path) and introduce an explicit discontinuity method to access physical and adjacent sheets.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:17:  \item \texttt{src/analytic\_continuation.jl} — current continuation logic (hook/straight path).
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:25:  \item Path-independence: compare two distinct contours in the complex plane; values should agree away from cuts.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:26:  \item Cut identification: sample points just above and below the cut; confirm discontinuity consistent with theory.
+
+
+## x3872-3body — Review current continuation implementation and identify discontinuity handling
+Timestamp: 2026-03-15T10:04:46.296578
+Action: Reviewed context; scanned for continuation/discontinuity keywords.
+Keyword hits:
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:5:\title{Analytic continuation validation notes}
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:13:Validation of analytic continuation across the $D\bar D^*$ cut in the complex plane. Compare existing continuation methods (hook/straight path) and introduce an explicit discontinuity method to access physical and adjacent sheets.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:17:  \item \texttt{src/analytic\_continuation.jl} — current continuation logic (hook/straight path).
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:25:  \item Path-independence: compare two distinct contours in the complex plane; values should agree away from cuts.
+/home/mmikhasenko/Documents/Projects/x3872-3body/NOTES.tex:26:  \item Cut identification: sample points just above and below the cut; confirm discontinuity consistent with theory.
+
+
+## x3872-3body — action skipped
+Timestamp: 2026-03-15T16:04:40.848189
+Action: ###  create_file scripts/grid_raw_threshold.jl
+Result: unknown action type
+
+## x3872-3body — action skipped
+Timestamp: 2026-03-15T18:04:43.121980
+Action: ###  create_file scripts/grid_raw_threshold.jl
+Result: unknown action type
+
+## x3872-3body — action done
+Timestamp: 2026-03-15T20:04:50.020384
+Action: create_file scripts/grid_raw_threshold.jl
+Result: created scripts/grid_raw_threshold.jl
+
+## x3872-3body — action skipped
+Timestamp: 2026-03-15T22:04:43.246694
+Action: create_file scripts/grid_raw_threshold.jl
+Result: file already exists
+
+## x3872-3body — action skipped
+Timestamp: 2026-03-16T00:04:58.086471
+Action: create_file scripts/grid_raw_threshold.jl
+Result: file already exists
+
+## x3872-3body — action skipped
+Timestamp: 2026-03-16T02:04:53.494199
+Action: create_file scripts/grid_raw_threshold.jl
+Result: file already exists
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T04:04:42.513624
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T06:04:41.734506
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T08:04:46.781754
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T10:04:41.994937
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T12:04:57.963867
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T14:04:41.360266
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T16:04:42.913172
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T18:04:41.644021
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T20:04:52.762786
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-16T22:04:41.198839
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T00:04:41.144955
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T02:04:41.399638
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T04:04:45.718662
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T06:04:45.860450
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T08:04:40.861097
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T10:04:47.984356
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T12:04:50.601788
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T14:04:41.850759
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T16:04:41.208523
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T18:04:50.222263
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
