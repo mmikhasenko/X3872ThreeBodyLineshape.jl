@@ -1,5 +1,7 @@
 # Plan (active)
 
+PR: https://github.com/mmikhasenko/X3872ThreeBodyLineshape.jl/pull/5
+
 ## Phase A — Baseline evaluation in complex plane
 - **Setup grid:** square region around $E_\mathrm{thr}=m_{D^0}+m_{D^{*0}}$.
   - Range: $E \in [E_\mathrm{thr}-3,\,E_\mathrm{thr}+0]\,\text{MeV}$ (real axis span 3 MeV)
@@ -31,6 +33,73 @@ end
 ```
 
 ### Action: run julia --project=. scripts/grid_raw_threshold.jl
+
+### Action: create_file scripts/compare_hook_straight.jl
+```julia
+using X3872ThreeBodyLineshape
+using xDDPhaseSpace
+using Cuba
+
+function rho_thr_method(d, m::Complex, method)
+    integrand(x, f) = begin
+        (σ3, σ2), jac = xDDPhaseSpace.mapdalitz(method, x, xDDPhaseSpace.masses(d), m^2)
+        val = xDDPhaseSpace.decay_matrix_element_squared(d, m^2, σ3, σ2) / (2π * m^2) * jac
+        f[1:2] .= reim(val)
+    end
+    v = cuhre(integrand, 2, 2)[1]
+    complex(v...) / (8π)^2
+end
+
+ch = build_channels()
+points = [(-2.5, -1.0), (-1.5, 0.2), (-0.5, -0.5), (-2.0, 0.5)]
+
+mkpath("results")
+open("results/hook_straight_points.csv","w") do io
+    write(io, "ReE,ImE,rho_hook,rho_straight,delta\n")
+    for (reE, imE) in points
+        m = ch.threshold + (reE + 1im*imE) * 1e-3
+        ρh = rho_thr_method(ch.pi, m, HookSqrtDalitzMapping{3}()) + rho_thr_method(ch.gamma, m, HookSqrtDalitzMapping{3}())
+        ρs = rho_thr_method(ch.pi, m, LinearDalitzMapping()) + rho_thr_method(ch.gamma, m, LinearDalitzMapping())
+        write(io, string(reE,",",imE,",",ρh,",",ρs,",",ρh-ρs,"\n"))
+    end
+end
+```
+
+### Action: run julia --project=. scripts/compare_hook_straight.jl
+
+### Action: create_file scripts/near_cut_discontinuity.jl
+```julia
+using X3872ThreeBodyLineshape
+using xDDPhaseSpace
+using Cuba
+
+function rho_thr_method(d, m::Complex, method)
+    integrand(x, f) = begin
+        (σ3, σ2), jac = xDDPhaseSpace.mapdalitz(method, x, xDDPhaseSpace.masses(d), m^2)
+        val = xDDPhaseSpace.decay_matrix_element_squared(d, m^2, σ3, σ2) / (2π * m^2) * jac
+        f[1:2] .= reim(val)
+    end
+    v = cuhre(integrand, 2, 2)[1]
+    complex(v...) / (8π)^2
+end
+
+ch = build_channels()
+revals = range(-0.2, 0.2; length=21)
+ims = [-1e-3, +1e-3]
+
+mkpath("results")
+open("results/near_cut_mismatch.csv","w") do io
+    write(io, "ReE,ImE,rho_hook,rho_straight,delta\n")
+    for imE in ims, reE in revals
+        m = ch.threshold + (reE + 1im*imE) * 1e-3
+        ρh = rho_thr_method(ch.pi, m, HookSqrtDalitzMapping{3}()) + rho_thr_method(ch.gamma, m, HookSqrtDalitzMapping{3}())
+        ρs = rho_thr_method(ch.pi, m, LinearDalitzMapping()) + rho_thr_method(ch.gamma, m, LinearDalitzMapping())
+        write(io, string(reE,",",imE,",",ρh,",",ρs,",",ρh-ρs,"\n"))
+    end
+end
+```
+
+### Action: run julia --project=. scripts/near_cut_discontinuity.jl
 
 ## Phase B — Cut structure + discontinuity
 - **Path definitions:**
