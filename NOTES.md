@@ -620,3 +620,112 @@ Timestamp: 2026-03-17T18:04:50.222263
 Action: run julia --project=. scripts/grid_raw_threshold.jl
 Result: command succeeded
 
+## x3872-3body — action done
+Timestamp: 2026-03-17T20:04:41.786073
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-17T22:04:42.609285
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T00:04:51.556576
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T02:04:47.269958
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T04:04:41.357111
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T06:04:42.071048
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T08:04:40.541074
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T10:04:46.007613
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T12:04:42.109684
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T14:04:44.062184
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T16:04:53.248159
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T18:05:06.615530
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-18T20:05:36.170797
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T00:05:01.913642
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T02:05:15.625110
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T04:05:36.608554
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T06:05:04.886651
+Action: run julia --project=. scripts/grid_raw_threshold.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T08:04:50.477361
+Action: create_file scripts/compare_hook_straight.jl
+Result: created scripts/compare_hook_straight.jl
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T10:05:26.254266
+Action: run julia --project=. scripts/compare_hook_straight.jl
+Result: command succeeded
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T12:04:48.385478
+Action: create_file scripts/near_cut_discontinuity.jl
+Result: created scripts/near_cut_discontinuity.jl
+
+## x3872-3body — action done
+Timestamp: 2026-03-19T14:04:55.601778
+Action: run julia --project=. scripts/near_cut_discontinuity.jl
+Result: command succeeded
+
+## x3872-3body — project worker
+Timestamp: 2026-03-20T06:05:09.205206
+Action: PLAN has no Action: entries; no autonomous changes.
+
