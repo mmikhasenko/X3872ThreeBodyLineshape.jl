@@ -3,12 +3,12 @@
 ```julia
 using X3872ThreeBodyLineshape
 
-model = X3872ThreeBody(Ef_MeV=0.0, g=0.1, Γ0_MeV=0.0; channel=:neutral)
+model = X3872ThreeBody(Ef_MeV=0.0, g_neutral=0.1, g_charged=0.0, Γ0_MeV=0.0)
 E = range(-2.0, 2.0, length=200)
 L = [lineshape(model, e) for e in E]
 
-# charged channel
-model_c = X3872ThreeBody(Ef_MeV=0.0, g=0.1, Γ0_MeV=0.0; channel=:charged)
+# include charged channel
+model_c = X3872ThreeBody(Ef_MeV=0.0, g_neutral=0.1, g_charged=0.1, Γ0_MeV=0.0)
 L_c = [lineshape(model_c, e) for e in E]
 ```
 

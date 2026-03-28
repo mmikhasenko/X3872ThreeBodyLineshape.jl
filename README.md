@@ -16,10 +16,10 @@ using xDDPhaseSpace for 3-body phase space and supporting analytic continuation.
 ```julia
 using X3872ThreeBodyLineshape
 
-model = X3872ThreeBody(Ef_MeV=0.0, g=0.1, Γ0_MeV=0.0; channel=:neutral)
-D = denominator(model, 1.0)      # E in MeV
+model = X3872ThreeBody(Ef_MeV=0.0, g_neutral=0.1, g_charged=0.0, Γ0_MeV=0.0)
+D = denominator(model, 1.0)      # E in MeV (relative to neutral threshold)
 L = lineshape(model, 1.0)        # |1/D|^2
-ρ = rho_thr(model, 1.0)          # (pi, gamma, total)
+ρ = rho_thr(model, 1.0)          # (neutral, charged, total)
 ```
 
 ## Parameters (defaults)
